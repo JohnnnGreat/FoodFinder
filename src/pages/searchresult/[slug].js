@@ -53,7 +53,10 @@ const SearchResult = () => {
       <div className="bg-[#ebeaea] h-[200px] p-[1rem]">
         <div className="max-w-[1100px] mx-auto flex items-center h-full">
           <div>
-            <h1 className="text-[3rem] font-semibold">
+            <h1
+              className="text-[3rem] font-semibold"
+              style={{ lineHeight: "1" }}
+            >
               Search Results for {text}
             </h1>
             <p className="text-gray-500">{length} results found</p>
@@ -105,13 +108,13 @@ const SearchResult = () => {
               </div>
             ))}
           </div>
-          <div>
+          <div className="border-l-[1px]">
             <h1 className="text-[2rem] text-center font-semibold">Category</h1>
-            <div className="mt-[1rem] flex flex-col items-center justify-center gap-[1rem] h-[100vh] relative top-0 overflow-y-scroll">
+            <div className="mt-[1rem] flex flex-col items-center justify-center gap-[1rem]  overflow-y-scroll">
               {categories.map((item) => (
                 <Link
-                  href={`/food/${item.idMeal}`}
-                  className="w-[80%] bg-[#ebeaea] flex items-center justify-evenly p-[.9rem] rounded-full"
+                  href={`/category/${item.strCategory}`}
+                  className="w-[80%] bg-[#ebeaea] flex items-center justify-evenly p-[.7rem] md:p-[.9rem] rounded-full"
                 >
                   <img
                     className="w-[50px] h-[50px] object-contain"

@@ -57,10 +57,13 @@ const FoodItem = () => {
             ))}
           </div>
         </div>
-        <div className="flex gap-[1.12rem] mt-[1rem]">
-          <button className="bg-[#f8f8f8] py-[.5rem] px-[1.3rem] rounded-md border">
+        <div className="grid-d gap-[1.12rem] mt-[1rem]">
+          <Link
+            href={`/category/${data?.strCategory}`}
+            className="bg-[#f8f8f8] py-[.5rem] px-[1.3rem] rounded-md border"
+          >
             {data?.strCategory}
-          </button>
+          </Link>
           <button className="bg-[#f8f8f8] py-[.5rem] px-[1.3rem] rounded-md border">
             {data?.strArea}
           </button>
@@ -74,11 +77,11 @@ const FoodItem = () => {
             ))}
           </ul>
         </div>
-        <div className="flex gap-[1rem]">
+        <div className="grid-d">
           {keys.map(
             (item) =>
               data[item] && (
-                <p className="border-[1px] border-[#ebebeb] py-[.5rem] px-[1.5rem]">
+                <p className="border-[1px] border-[#ebebeb] py-[.5rem] px-[1.5rem] text-[.8rem]">
                   {data[item]}
                 </p>
               )

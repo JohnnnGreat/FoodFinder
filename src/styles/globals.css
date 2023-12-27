@@ -29,6 +29,10 @@ body {
   .grid-f {
     grid-template-columns: 1fr !important;
   }
+
+  .grid-d {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .grid-f {
@@ -36,4 +40,10 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 1rem;
+}
+
+.grid-d {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
