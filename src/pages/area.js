@@ -10,7 +10,7 @@ const Area = () => {
         );
         console.log(response);
       } catch (error) {}
-    });
+    })();
   });
   return <div>area</div>;
 };
