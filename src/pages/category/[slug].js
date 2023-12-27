@@ -17,12 +17,12 @@ const Category = () => {
       );
       const { data } = response;
       const { meals } = data;
-      setCatLen(meals.length);
+      setCatLen(meals?.length);
       setData(meals);
     })();
   });
   return (
-    <div className="h-[400px] bg-[#ebeaea]">
+    <div className="h-[300px] bg-[#ebeaea]">
       <div className="flex items-center max-w-[1100px] mx-auto p-[1rem] h-full">
         <div>
           <h1 className="text-[2.4rem] font-semibold">{cat} Category</h1>

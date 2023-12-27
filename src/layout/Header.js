@@ -12,12 +12,12 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link className="hover:font-bold transition-all" href="/categories">
+            <Link className="hover:font-bold transition-all" href="/category">
               Categories
             </Link>
           </li>
           <li>
-            <Link className="hover:font-bold transition-all" href="/areas">
+            <Link className="hover:font-bold transition-all" href="/area">
               Areas
             </Link>
           </li>
