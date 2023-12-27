@@ -58,7 +58,7 @@ export default function Home() {
                 className="placeholder:text-[.8rem] outline-none p-[.8rem] text-[.7rem] md:p-[1rem] w-[90%] sm:w-[500px] bg-white rounded-full border-[1px] border-gray-300"
               />
               <button
-                className="w-[90%] hover:bg-gray-950 mt-[1rem] p-[.8rem] md:p-[1rem] bg-black text-white md:ml-[.6rem] rounded-full hover:shadow-lg"
+                className="w-[90%] block hover:bg-gray-950 mt-[1rem] p-[.8rem] md:p-[1rem] bg-black text-white sm:w-[500px] rounded-full hover:shadow-lg"
                 onClick={handleSearchResult}
               >
                 Send
