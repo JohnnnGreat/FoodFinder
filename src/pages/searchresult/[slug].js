@@ -63,8 +63,9 @@ const SearchResult = () => {
       <div className="h-screen relative">
         <div className="grid-s max-w-[1100px] mx-auto py-[1.4rem] ">
           <div className="grid-f">
-            {data.map((item) => (
-              <div ke className="bg-white shadow-md p-[1rem] rounded-md">
+            {data?.length > 0 ? <div>some</div> : <div>empty</div>}
+            {data?.map((item) => (
+              <div className="bg-white shadow-md p-[1rem] h-[max-content] rounded-md">
                 <img
                   className="w-full h-[100px] object-cover rounded-md"
                   src={item.strMealThumb}
