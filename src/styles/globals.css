@@ -21,8 +21,19 @@ body {
   gap: 2rem;
 }
 
+@media (max-width: 567px) {
+  .grid-s {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-f {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 .grid-f {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  padding: 1rem;
 }

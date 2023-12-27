@@ -63,7 +63,7 @@ const SearchResult = () => {
       <div className="h-screen relative">
         <div className="grid-s max-w-[1100px] mx-auto py-[1.4rem] ">
           <div className="grid-f">
-            {data?.length > 0 ? <div>some</div> : <div>empty</div>}
+            {/* {data?.length > 0 ? <div>some</div> : <div>empty</div>} */}
             {data?.map((item) => (
               <div className="bg-white shadow-md p-[1rem] h-[max-content] rounded-md">
                 <img

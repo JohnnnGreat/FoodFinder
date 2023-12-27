@@ -29,13 +29,13 @@ export default function Home() {
   return (
     <div className="w-full bg-[#ebeaea] h-[400px]">
       <div className="max-w-[1100px] mx-auto flex items-center justify-center h-full">
-        <div>
+        <div className="w-full p-[1rem]">
           <input
             type="text"
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
-            className="outline-none p-[1rem] w-[500px] bg-white rounded-full"
+            className="outline-none p-[1rem] w-[90%] sm:w-[500px] bg-white rounded-full"
           />
           <button onClick={handleSearchResult}>Send</button>
         </div>
